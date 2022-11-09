@@ -116,7 +116,7 @@ main button {
     transition: background-color 0.3s ease-in-out;
 }
 main button:hover{
-    background-color: hsl(150, 59%, 54%);
+    box-shadow: 0 0 30px var(--Neon_Green);
 }
 /* Icons & Buttons end */
 
