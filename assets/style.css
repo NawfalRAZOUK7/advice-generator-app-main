@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 :root{
---Light_Cyan: hsl(193, 38%, 86%);
---Neon_Green: hsl(150, 100%, 66%);
---Grayish_Blue: hsl(217, 19%, 38%);
---Dark_Grayish_Blue: hsl(217, 19%, 24%);
---Dark_Blue: hsl(218, 23%, 16%);
+    /* Primary */
+    --Light_Cyan: hsl(193, 38%, 86%);
+    --Neon_Green: hsl(150, 100%, 66%);
+    /* Neutral */
+    --Grayish_Blue: hsl(217, 19%, 38%);
+    --Dark_Grayish_Blue: hsl(217, 19%, 24%);
+    --Dark_Blue: hsl(218, 23%, 16%);
+    /* Personal */
+    --Univers:hsla(217, 19%, 16%);
 }
 
 /* General styles */
@@ -25,7 +29,7 @@ button {
 
 /* Body start */
 body {
-    background-color: var(--Dark_Grayish_Blue);
+    background-color: var(--Univers);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +41,7 @@ body {
 
 /* main start */
 main {
-    background-color: var(--Grayish_Blue);
+    background-color: var(--Dark_Grayish_Blue);
     padding: 1rem;
     border-radius: 0.5rem;
     position: relative;
@@ -81,26 +85,6 @@ main {
 }
 .divider img {
     position: relative;
-}
-.divider::before {
-    content: "";
-    width: 40%;
-    height: 1px;
-    background-color: var(--Light_Cyan);
-    position: absolute;
-    right: 1.25rem;
-    bottom: 3.4rem;
-    display: block;
-}
-.divider::after {
-    content: "";
-    width: 45%;
-    height: 1px;
-    background-color: var(--Light_Cyan);
-    left: 0;
-    bottom: 0.87rem;
-    position: relative;
-    display: block;
 }
 
 main button {
